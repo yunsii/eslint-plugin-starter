@@ -10,7 +10,7 @@ const theme: Theme = (props) => {
   const { loadedData, loadState } = props
 
   const DocTheme = createTheme({
-    logo: <div style={{ fontSize: '20px' }}>pkg-name</div>,
+    logo: <div style={{ fontSize: '20px' }}>eslint-plugin-starter</div>,
     topNavs: [
       {
         label: 'Components',
@@ -23,7 +23,7 @@ const theme: Theme = (props) => {
         activeIfMatch: '/hooks',
       },
       {
-        label: 'pkg-name',
+        label: 'eslint-plugin-starter',
         href: 'https://github.com/yunsii/starter-vite-react-library',
       },
     ],

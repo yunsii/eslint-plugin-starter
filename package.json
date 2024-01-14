@@ -1,5 +1,5 @@
 {
-  "name": "pkg-name",
+  "name": "eslint-plugin-starter",
   "type": "module",
   "version": "0.0.0",
   "description": "",
@@ -9,13 +9,16 @@
     "https://opencollective.com/yuns",
     "https://afdian.net/@yunslove"
   ],
-  "homepage": "https://github.com/yunsii/pkg-name#readme",
+  "homepage": "https://github.com/yunsii/eslint-plugin-starter#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yunsii/pkg-name"
+    "url": "https://github.com/yunsii/eslint-plugin-starter"
   },
-  "bugs": "https://github.com/yunsii/pkg-name/issues",
-  "keywords": [],
+  "bugs": "https://github.com/yunsii/eslint-plugin-starter/issues",
+  "keywords": [
+    "eslint",
+    "eslint-plugin"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -40,17 +43,20 @@
     "coverage": "vitest run --config vite.lib.config.ts --coverage"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "eslint": "^8.40.0"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^2.6.2",
+    "@typescript-eslint/utils": "^6.18.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.2",
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@commitlint/types": "^18.4.4",
     "@jannajs/lint": "3.0.0-next.3",
     "@mdx-js/react": "^3.0.0",
+    "@types/eslint": "^8.56.2",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.47",
@@ -66,6 +72,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-starter": "workspace:^",
     "eslint-ts-patch": "^8.56.0-0",
     "fs-extra": "^11.2.0",
     "husky": "^8.0.3",
